@@ -1,0 +1,30 @@
+{
+    "name": "zeruiedu/livetool",
+    "description": "live",
+    "license": "MIT",
+    "authors": [
+        {   
+            "name": "zeruiedu",
+            "email": "develop@21centuryedu.com"
+        }   
+    ],  
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.4"
+    },  
+    "autoload": {
+        "psr-4": {
+            "Zeruiedu\\LiveTool\\": "src/"
+        }   
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zeruiedu\\LiveTool\\LiveToolServiceProvider"
+            ],
+            "aliases": {
+                "LiveTool": "Zeruiedu\\LiveTool\\Facades\\LiveTool"
+            }
+        }
+    }
+}
